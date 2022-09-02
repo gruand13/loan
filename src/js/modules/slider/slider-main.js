@@ -40,6 +40,7 @@ export default class MainSlider extends Slider {
     }
 
     render(){
+     try{
         try{
             this.hanson = document.querySelector('.hanson');
         } catch(e){
@@ -58,5 +59,6 @@ export default class MainSlider extends Slider {
           });
         });
         this.showSlides(this.slideIndex);
+     } catch(e){}
     }
 }
